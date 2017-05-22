@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title>MIS233-EEA</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+<center>
+  <div id="main_block">
+    <!--Top Block Starts -->
+    <div id="top_block">
+      
+      <div class="tp_img1">
+        <div class="tp_img2"> &nbsp; </div>
+      </div>
+    </div>
+    <!--Top Block Ends -->
+  </div>
+  <div id="sub_block1">
+    <!--Content Block Starts -->
+    <div id="content_block">
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+         <!--Left Block Starts -->
+      <div id="left_block"> <span class="blk1_lp"> 
+             <br />
+             <span class="our">RMS User Page</span><br />
+             <asp:Button ID="logOutButton" runat="server" Height="32px" Text="Log Out" Width="185px" OnClick="logOutButton_Click" />
+          <br />
+             <asp:Button ID="changePassword" runat="server" Height="32px" Text="Change Password" Width="185px" OnClick="changePassword_Click" />
+          <br />
+             <asp:Button ID="askConsent" runat="server" Height="32px" Text="Ask for Consent" Width="185px" OnClick="askConsent_Click" />
+          <br />
+             <asp:Button ID="addCourse" runat="server" Height="32px" Text="Add Course" Width="185px" OnClick="addCourse_Click" />
+          <br />
+             <asp:Button ID="viewCourseList" runat="server" Height="32px" Text="View Course List" Width="185px" OnClick="viewCourseList_Click"/>
+          <br />
+             <asp:Button ID="profConsent" runat="server" Height="32px" Text="V/P Consent Requests" Width="185px" OnClick="profConsent_Click" />
+          <br />
+             <asp:Button ID="viewCourseStudentList" runat="server" Height="32px" Text="View Course and Student List" Width="185px" OnClick="viewCoursesStudentList_Click"/>
+             <br />
+             <asp:Button ID="submitGrade" runat="server" Height="32px" Text="Submit Grade" Width="185px" OnClick="submitGrade_Click"/>
+             <br />
+             <asp:Button ID="newUser" runat="server" Height="32px" Text="New User" Width="185px" OnClick="newUser_Click"/>
+             <br />
+             <asp:Button ID="deactivateUser" runat="server" Height="32px" Text="Deactivate User" Width="185px" OnClick="deactivateUser_Click"/>
+             <br />
+             <asp:Button ID="newCourse" runat="server" Height="32px" Text="New Course" Width="185px" OnClick="newCourse_Click"/>
+             <br />
+             <asp:Button ID="listAllUsers" runat="server" Height="32px" Text="List All Users" Width="185px" OnClick="listAllUsers_Click" />
+             <br />
+             <asp:Button ID="rmsRules" runat="server" Height="32px" Text="RMS Rules" Width="185px" OnClick="rmsRules_Click" />
+             <br />
+             <asp:Button ID="reportStatistics" runat="server" Height="32px" Text="Report Statistics" Width="185px" OnClick="reportStatistics_Click"/>
+             <br />
+        </span> </div>
+         </asp:ContentPlaceHolder>
+      <!--Left Block Ends -->
+      <!--Right Block Starts -->
+     <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+         <div id="right_block">
+             <span class="modul">&nbsp;<span class="inr_bllk">
+         </div>
+         </span></span>
+
+     </asp:ContentPlaceHolder>
+      <!--Right Block Ends -->
+      <!--Content Block Ends -->
+    </div>
+  </div>
+  <div id="sub_block2">
+    <div id="footer_block"> <span class="ftr_nv cpy" >Enes Emre Akbulut 2013502153 <br /><br />Copyright &copy; 2008, All rights reserved. <a href="http://www.buytemplates.net/CSS-XHTML-web-templates.aspx">Css/Xhtml template</a> designed by buytemplates.net</span> </div>
+  </div>
+</center>
+
+    </form>
+</body>
+</html>

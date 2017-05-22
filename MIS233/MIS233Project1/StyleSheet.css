@@ -1,0 +1,78 @@
+﻿body {
+  
+}
+div.inline {
+     float:left;
+ 
+}
+#simulationScreen {
+ 
+}
+#entranceSection {
+    padding-left:20px;
+    width:100px;
+   float:left;
+    margin:2px 2px 2px 2px;
+    display:inline;
+}
+#parkArea{
+    padding-left:130px;
+     width:400px;
+     display:inline;
+}
+#exitSection {
+    padding-left:50px;
+}
+#simulationControl{
+   margin-bottom: 100px;
+   margin-left: 75%;
+   padding:15px 15px 15px 15px;
+   font-family:Arial;
+   color:whitesmoke;
+   background-color:cadetblue;
+}
+h4 {
+    padding-left:15px;
+}
+#startButton, #prepareButton{
+   
+    height:50px;
+}
+.parkAreaFree{
+    height:40px;
+    width:30px;
+    border: 2px solid black;
+    margin:5px 5px 10px 5px;
+    float:left;
+    padding-left:5px;
+    
+}
+
+.car{
+    height:40px;
+    width:30px;
+    background-color:cornflowerblue;
+    margin:2px 2px 2px 2px;
+    float:left;
+    padding-left:5px;
+    color:white;
+    
+}
+.entrances{
+    width:210px;
+    height:20px;
+    background-color:lightgreen;
+    margin-bottom:130px;
+    padding-left:12%;
+    padding-right:5%;
+    color:white;
+    
+}
+.exits{
+    width:210px;
+    height:20px;
+    background-color:red;
+    margin-bottom:130px;
+    
+    color:white;
+}

@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="StyleSheet.css"   />
+    
+</head>
+<body>
+     <div id="simulationScreen">
+        <div id="entranceSection" class="inline">
+            <h3>Entrances</h3>
+        </div>
+         <div id="parkArea" class="inline">
+             <h3>Park Area</h3>
+        </div>
+        <div id="exitSection" class="inline">
+            <h3>Exits</h3>
+
+        </div>
+     </div>
+     <form id="simulationControl" action="">
+             <h4>SIMULATION CONTROL UNIT</h4>
+             <label>Capacity</label><br>
+             <input id="capacity" type="number" /><br>
+             <label>Number of Entrances</label><br>
+             <input id="entrances" type="number" /><br>
+             <label>Number of Exits</label><br>
+             <input id="exits" type="number" /><br>
+             <label>Minimum Number of Vehicles Arriving  </label><br>
+             <input id="minArrVehicle" type="number" /><br>
+             <label>Maximum Number of Vehicles Arriving </label><br>
+             <input id="maxArrVehicle" type="number" /><br>
+             <label>Minimum Arriving Service Time  </label><br>
+             <input id="minArrTime" type="number" /><br>
+             <label>Maximum Arriving Service Time  </label><br>
+             <input id="maxArrTime" type="number" /><br>
+             <label>Minium Service Time</label><br>
+             <input id="minServiceTime" type="number" /><br>
+             <label>Maximum Service Time</label><br>
+             <input id="maxServiceTime" type="number" /><br>
+             <label>Minimum Leaving Service Time</label><br>
+             <input id="minLeaTime" type="number" /><br>    
+             <label>Maximum Leaving Service Time</label><br>
+             <input id="maxLeaTime" type="number" /><br>      
+             <label>Run For</label><br>
+             <input id="runFor" type="number" /><br><br>
+             <input type="button" value="Prepare Enviroment" id="prepareButton" />    
+             <input type="button" value="Start Simulation" id="startButton" />
+     </form>
+    <script type="text/javascript" src="JavaScript.js"></script>
+</body>
+</html>

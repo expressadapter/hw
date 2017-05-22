@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Register</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css" />
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css.map" />
+	
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">Hayrına Sınav Notları</a>
+        </div>
+		 <ul class="nav navbar-nav navbar-left">
+
+		<li><a href="register.html"><b>Courses</b> </a></li>
+		<li><a href="register.html"><b>Announcements</b> </a></li>
+		<li><a href="register.html"><b>Our Partners</b> </a></li>
+		<li><a href="register.html"><b>About Us</b> </a></li>
+		<li><a href="register.html"><b>Contact</b> </a></li>
+		
+		</ul>
+        <ul class="nav navbar-nav navbar-right">
+        <li><p class="navbar-text">Already have an account?</p></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b> <span class="caret"></span></a>
+			<ul id="login-dp" class="dropdown-menu">
+			<li>
+				 <div class="row">
+					<div class="col-md-12">
+						
+						Login via
+						<div class="social-buttons">
+							<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+							<a href="#" class="btn btn-gplus"><i class="fa fa-google-plus"></i> Google</a>
+						</div>
+						
+						 <form class="form" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+								<div class="form-group">
+									 <label class="sr-only" for="exampleInputEmail2">Email address</label>
+									 <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email address" required="" pattern="[0-9]{10}" value="" title="This is an error message"  >
+								</div>
+								<div class="form-group">
+									 <label class="sr-only" for="exampleInputPassword2">Password</label>
+									 <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password" required>
+									 <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+								</div>
+								<div class="form-group">
+									 <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+								</div>
+								<div class="checkbox">
+									 <label>
+									 <input type="checkbox"> keep me logged-in
+									 </label>
+								</div>
+						 </form>
+					</div>
+					<div class="bottom text-center">
+						New here ? <a href="register.html"><b>Join Us</b></a>
+					</div>
+				 </div>
+			</li>
+			
+			</ul>
+			<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+			</ul>
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron page-wrap">
+      <div class="container ">
+        <div class="row">
+		
+			<div class="panel panel-primary col-md-4">
+				<div class="panel-body">
+					<form method="POST" action="#" role="form">
+						<div class="form-group">
+							<h2>Create account</h2>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupName">Name</label>
+							<input id="signupName" type="text" maxlength="50" class="form-control" required>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupName">Surname</label>
+							<input id="signupSurname" type="text" maxlength="50" class="form-control" required>
+						</div>
+						<div class="form-group"id="date">
+							<label class="control-label" for="signupBday">Birthday</label>
+							<input id="signupBday" type="text" class="form-control" pattern="(^(((0[1-9]|1[0-9]|2[0-8])[\/](0[1-9]|1[012]))|((29|30|31)[\/](0[13578]|1[02]))|((29|30)[\/](0[4,6,9]|11)))[\/](19|[2-9][0-9])\d\d$)|(^29[\/]02[\/](19|[2-9][0-9])(00|04|08|12|16|20|24|28|32|36|40|44|48|52|56|60|64|68|72|76|80|84|88|92|96)$)" placeholder="dd/mm/yyyy" title="You must enter a valid date in the format 'dd/mm/yyyy', e.g. 01/04/2017" required>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupUniversity">University</label>
+							  <select class="form-control" id="signupUniversity" required>
+								 <option disabled selected value data-hidden="true">Select</option>
+								<option value="Abant İzzet Baysal Üniversitesi">Abant İzzet Baysal Üniversitesi</option>
+								<option value="Abdullah Gül Üniversitesi">Abdullah Gül Üniversitesi</option>
+								<option value="Acıbadem Üniversitesi">Acıbadem Üniversitesi</option>
+								<option value="Adana Bilim ve Teknoloji Üniversitesi">Adana Bilim ve Teknoloji Üniversitesi</option>
+								<option value="Adnan Menderes Üniversitesi">Adnan Menderes Üniversitesi</option>
+								<option value="Adıyaman Üniversitesi">Adıyaman Üniversitesi</option>
+								<option value="Afyon Kocatepe Üniversitesi">Afyon Kocatepe Üniversitesi</option>
+								<option value="Ahi Evran Üniversitesi">Ahi Evran Üniversitesi</option>
+								<option value="Akdeniz Üniversitesi">Akdeniz Üniversitesi</option>
+								<option value="Akev Üniversitesi">Akev Üniversitesi</option>
+								<option value="Aksaray Üniversitesi">Aksaray Üniversitesi</option>
+								<option value="Alanya Alaaddin Keykubat Üniversitesi">Alanya Alaaddin Keykubat Üniversitesi</option>
+								<option value="Alanya Hamdullah Emin Paşa Üniversitesi">Alanya Hamdullah Emin Paşa Üniversitesi</option>
+								<option value="Amasya Üniversitesi">Amasya Üniversitesi</option>
+								<option value="Anadolu Üniversitesi">Anadolu Üniversitesi</option>
+								<option value="Anka Teknoloji Üniversitesi">Anka Teknoloji Üniversitesi</option>
+								<option value="Ankara Sosyal Bilimler Üniversitesi">Ankara Sosyal Bilimler Üniversitesi</option>
+								<option value="Ankara Üniversitesi">Ankara Üniversitesi</option>
+								<option value="Ardahan Üniversitesi">Ardahan Üniversitesi</option>
+								<option value="Artvin Çoruh Üniversitesi">Artvin Çoruh Üniversitesi</option>
+								<option value="Atatürk Üniversitesi">Atatürk Üniversitesi</option>
+								<option value="Atılım Üniversitesi">Atılım Üniversitesi</option>
+								<option value="Avrasya Üniversitesi">Avrasya Üniversitesi</option>
+								<option value="Ağrı İbrahim Çeçen Üniversitesi">Ağrı İbrahim Çeçen Üniversitesi</option>
+								<option value="Bahçeşehir Üniversitesi">Bahçeşehir Üniversitesi</option>
+								<option value="Balıkesir Üniversitesi">Balıkesir Üniversitesi</option>
+								<option value="Bandırma Onyedi Eylül Üniversitesi">Bandırma Onyedi Eylül Üniversitesi</option>
+								<option value="Bartın Üniversitesi">Bartın Üniversitesi</option>
+								<option value="Batman Üniversitesi">Batman Üniversitesi</option>
+								<option value="Bayburt Üniversitesi">Bayburt Üniversitesi</option>
+								<option value="Başkent Üniversitesi">Başkent Üniversitesi</option>
+								<option value="Beykent Üniversitesi">Beykent Üniversitesi</option>
+								<option value="Bezmiâlem Vakıf Üniversitesi">Bezmiâlem Vakıf Üniversitesi</option>
+								<option value="Bilecik Şeyh Edebali Üniversitesi">Bilecik Şeyh Edebali Üniversitesi</option>
+								<option value="Bilkent Üniversitesi">Bilkent Üniversitesi</option>
+								<option value="Bingöl Üniversitesi">Bingöl Üniversitesi</option>
+								<option value="Biruni Üniversitesi">Biruni Üniversitesi</option>
+								<option value="Bitlis Eren Üniversitesi">Bitlis Eren Üniversitesi</option>
+								<option value="Bozok Üniversitesi">Bozok Üniversitesi</option>
+								<option value="Boğaziçi Üniversitesi">Boğaziçi Üniversitesi</option>
+								<option value="Bursa Orhangazi Üniversitesi">Bursa Orhangazi Üniversitesi</option>
+								<option value="Bursa Teknik Üniversitesi">Bursa Teknik Üniversitesi</option>
+								<option value="Bülent Ecevit Üniversitesi">Bülent Ecevit Üniversitesi</option>
+								<option value="Canik Başarı Üniversitesi">Canik Başarı Üniversitesi</option>
+								<option value="Celal Bayar Üniversitesi">Celal Bayar Üniversitesi</option>
+								<option value="Cumhuriyet Üniversitesi">Cumhuriyet Üniversitesi</option>
+								<option value="Çanakkale Onsekiz Mart Üniversitesi">Çanakkale Onsekiz Mart Üniversitesi</option>
+								<option value="Çankaya Üniversitesi">Çankaya Üniversitesi</option>
+								<option value="Çankırı Karatekin Üniversitesi">Çankırı Karatekin Üniversitesi</option>
+								<option value="Çağ Üniversitesi">Çağ Üniversitesi</option>
+								<option value="Çukurova Üniversitesi">Çukurova Üniversitesi</option>
+								<option value="Deniz Harp Okulu">Deniz Harp Okulu</option>
+								<option value="Dicle Üniversitesi">Dicle Üniversitesi</option>
+								<option value="Dokuz Eylül Üniversitesi">Dokuz Eylül Üniversitesi</option>
+								<option value="Doğuş Üniversitesi">Doğuş Üniversitesi</option>
+								<option value="Dumlupınar Üniversitesi">Dumlupınar Üniversitesi</option>
+								<option value="Düzce Üniversitesi">Düzce Üniversitesi</option>
+								<option value="Ege Üniversitesi">Ege Üniversitesi</option>
+								<option value="Erciyes Üniversitesi">Erciyes Üniversitesi</option>
+								<option value="Erzincan Üniversitesi">Erzincan Üniversitesi</option>
+								<option value="Erzurum Teknik Üniversitesi">Erzurum Teknik Üniversitesi</option>
+								<option value="Eskişehir Osmangazi Üniversitesi">Eskişehir Osmangazi Üniversitesi</option>
+								<option value="Fatih Sultan Mehmet Üniversitesi">Fatih Sultan Mehmet Üniversitesi</option>
+								<option value="Fatih Üniversitesi">Fatih Üniversitesi</option>
+								<option value="Fırat Üniversitesi">Fırat Üniversitesi</option>
+								<option value="Galatasaray Üniversitesi">Galatasaray Üniversitesi</option>
+								<option value="Gazi Üniversitesi">Gazi Üniversitesi</option>
+								<option value="Gaziantep Üniversitesi">Gaziantep Üniversitesi</option>
+								<option value="Gaziosmanpaşa Üniversitesi">Gaziosmanpaşa Üniversitesi</option>
+								<option value="Gebze Teknik Üniversitesi">Gebze Teknik Üniversitesi</option>
+								<option value="Gedik Üniversitesi">Gedik Üniversitesi</option>
+								<option value="Gediz Üniversitesi">Gediz Üniversitesi</option>
+								<option value="Giresun Üniversitesi">Giresun Üniversitesi</option>
+								<option value="Gülhane Askeri Tıp Akademisi">Gülhane Askeri Tıp Akademisi</option>
+								<option value="Gümüşhane Üniversitesi">Gümüşhane Üniversitesi</option>
+								<option value="Hacettepe Üniversitesi">Hacettepe Üniversitesi</option>
+								<option value="Hakkari Üniversitesi">Hakkari Üniversitesi</option>
+								<option value="Haliç Üniversitesi">Haliç Üniversitesi</option>
+								<option value="Harran Üniversitesi">Harran Üniversitesi</option>
+								<option value="Hasan Kalyoncu Üniversitesi">Hasan Kalyoncu Üniversitesi</option>
+								<option value="Hava Harp Okulu">Hava Harp Okulu</option>
+								<option value="Hitit Üniversitesi">Hitit Üniversitesi</option>
+								<option value="Iğdır Üniversitesi">Iğdır Üniversitesi</option>
+								<option value="Işık Üniversitesi">Işık Üniversitesi</option>
+								<option value="Kadir Has Üniversitesi">Kadir Has Üniversitesi</option>
+								<option value="Kafkas Üniversitesi">Kafkas Üniversitesi</option>
+								<option value="Kahramanmaraş Sütçü İmam Üniversitesi">Kahramanmaraş Sütçü İmam Üniversitesi</option>
+								<option value="Kanuni Üniversitesi">Kanuni Üniversitesi</option>
+								<option value="Kara Harp Okulu">Kara Harp Okulu</option>
+								<option value="Karabük Üniversitesi">Karabük Üniversitesi</option>
+								<option value="Karadeniz Teknik Üniversitesi">Karadeniz Teknik Üniversitesi</option>
+								<option value="Karamanoğlu Mehmetbey Üniversitesi">Karamanoğlu Mehmetbey Üniversitesi</option>
+								<option value="Karatay Üniversitesi">Karatay Üniversitesi</option>
+								<option value="Kastamonu Üniversitesi">Kastamonu Üniversitesi</option>
+								<option value="Kilis 7 Aralık Üniversitesi">Kilis 7 Aralık Üniversitesi</option>
+								<option value="Kocaeli Üniversitesi">Kocaeli Üniversitesi</option>
+								<option value="Konya Gıda Tarım Üniversitesi">Konya Gıda Tarım Üniversitesi</option>
+								<option value="Koç Üniversitesi">Koç Üniversitesi</option>
+								<option value="Kırklareli Üniversitesi">Kırklareli Üniversitesi</option>
+								<option value="Kırıkkale Üniversitesi">Kırıkkale Üniversitesi</option>
+								<option value="MEF Üniversitesi">MEF Üniversitesi</option>
+								<option value="Maltepe Üniversitesi">Maltepe Üniversitesi</option>
+								<option value="Mardin Artuklu Üniversitesi">Mardin Artuklu Üniversitesi</option>
+								<option value="Marmara Üniversitesi">Marmara Üniversitesi</option>
+								<option value="Mehmet Akif Ersoy Üniversitesi">Mehmet Akif Ersoy Üniversitesi</option>
+								<option value="Melikşah Üniversitesi">Melikşah Üniversitesi</option>
+								<option value="Mersin Üniversitesi">Mersin Üniversitesi</option>
+								<option value="Mevlana Üniversitesi">Mevlana Üniversitesi</option>
+								<option value="Mimar Sinan Güzel Sanatlar Üniversitesi">Mimar Sinan Güzel Sanatlar Üniversitesi</option>
+								<option value="Murat Hüdavendigar Üniversitesi">Murat Hüdavendigar Üniversitesi</option>
+								<option value="Mustafa Kemal Üniversitesi">Mustafa Kemal Üniversitesi</option>
+								<option value="Muğla Sıtkı Koçman Üniversitesi">Muğla Sıtkı Koçman Üniversitesi</option>
+								<option value="Muş Alparslan Üniversitesi">Muş Alparslan Üniversitesi</option>
+								<option value="Namık Kemal Üniversitesi">Namık Kemal Üniversitesi</option>
+								<option value="Necmettin Erbakan Üniversitesi**">Necmettin Erbakan Üniversitesi**</option>
+								<option value="Nevşehir Hacı Bektaş Veli Üniversitesi">Nevşehir Hacı Bektaş Veli Üniversitesi</option>
+								<option value="Niğde Üniversitesi">Niğde Üniversitesi</option>
+								<option value="Nişantaşı Üniversitesi">Nişantaşı Üniversitesi</option>
+								<option value="Nuh Naci Yazgan Üniversitesi">Nuh Naci Yazgan Üniversitesi</option>
+								<option value="İbn-u Haldun Üniversitesi">İbn-u Haldun Üniversitesi</option>
+								<option value="İnönü Üniversitesi">İnönü Üniversitesi</option>
+								<option value="İpek Üniversitesi**">İpek Üniversitesi**</option>
+								<option value="İskenderun Teknik Üniversitesi">İskenderun Teknik Üniversitesi</option>
+								<option value="İstanbul 29 Mayıs Üniversitesi">İstanbul 29 Mayıs Üniversitesi</option>
+								<option value="İstanbul Arel Üniversitesi">İstanbul Arel Üniversitesi</option>
+								<option value="İstanbul Aydın Üniversitesi">İstanbul Aydın Üniversitesi</option>
+								<option value="İstanbul Bilgi Üniversitesi">İstanbul Bilgi Üniversitesi</option>
+								<option value="İstanbul Bilim Üniversitesi">İstanbul Bilim Üniversitesi</option>
+								<option value="İstanbul Esenyurt Üniversitesi">İstanbul Esenyurt Üniversitesi</option>
+								<option value="İstanbul Gelişim Üniversitesi">İstanbul Gelişim Üniversitesi</option>
+								<option value="İstanbul Kemerburgaz Üniversitesi">İstanbul Kemerburgaz Üniversitesi</option>
+								<option value="İstanbul Kültür Üniversitesi">İstanbul Kültür Üniversitesi</option>
+								<option value="İstanbul Medeniyet Üniversitesi">İstanbul Medeniyet Üniversitesi</option>
+								<option value="İstanbul Medipol Üniversitesi">İstanbul Medipol Üniversitesi</option>
+								<option value="İstanbul Rumeli Üniversitesi">İstanbul Rumeli Üniversitesi</option>
+								<option value="İstanbul Sabahattin Zaim Üniversitesi">İstanbul Sabahattin Zaim Üniversitesi</option>
+								<option value="İstanbul Teknik Üniversitesi">İstanbul Teknik Üniversitesi</option>
+								<option value="İstanbul Ticaret Üniversitesi">İstanbul Ticaret Üniversitesi</option>
+								<option value="İstanbul Üniversitesi">İstanbul Üniversitesi</option>
+								<option value="İstanbul Şehir Üniversitesi">İstanbul Şehir Üniversitesi</option>
+								<option value="İstinye Üniversitesi">İstinye Üniversitesi</option>
+								<option value="İzmir Ekonomi Üniversitesi">İzmir Ekonomi Üniversitesi</option>
+								<option value="İzmir Kâtip Çelebi Üniversitesi">İzmir Kâtip Çelebi Üniversitesi</option>
+								<option value="İzmir Yüksek Teknoloji Enstitüsü">İzmir Yüksek Teknoloji Enstitüsü</option>
+								<option value="İzmir Üniversitesi">İzmir Üniversitesi</option>
+								<option value="Okan Üniversitesi">Okan Üniversitesi</option>
+								<option value="Ondokuz Mayıs Üniversitesi">Ondokuz Mayıs Üniversitesi</option>
+								<option value="Ordu Üniversitesi">Ordu Üniversitesi</option>
+								<option value="Orta Doğu Teknik Üniversitesi">Orta Doğu Teknik Üniversitesi</option>
+								<option value="Osmaniye Korkut Ata Üniversitesi">Osmaniye Korkut Ata Üniversitesi</option>
+								<option value="Özyeğin Üniversitesi">Özyeğin Üniversitesi</option>
+								<option value="Pamukkale Üniversitesi">Pamukkale Üniversitesi</option>
+								<option value="Piri Reis Üniversitesi">Piri Reis Üniversitesi</option>
+								<option value="Polis Akademisi">Polis Akademisi</option>
+								<option value="Recep Tayyip Erdoğan Üniversitesi">Recep Tayyip Erdoğan Üniversitesi</option>
+								<option value="Sabancı Üniversitesi">Sabancı Üniversitesi</option>
+								<option value="Sakarya Üniversitesi">Sakarya Üniversitesi</option>
+								<option value="Sanko Üniversitesi">Sanko Üniversitesi</option>
+								<option value="Sağlık Bilimleri Üniversitesi">Sağlık Bilimleri Üniversitesi</option>
+								<option value="Selahattin Eyyubi Üniversitesi">Selahattin Eyyubi Üniversitesi</option>
+								<option value="Selçuk Üniversitesi">Selçuk Üniversitesi</option>
+								<option value="Siirt Üniversitesi">Siirt Üniversitesi</option>
+								<option value="Sinop Üniversitesi">Sinop Üniversitesi</option>
+								<option value="Süleyman Demirel Üniversitesi">Süleyman Demirel Üniversitesi</option>
+								<option value="Süleyman Şah Üniversitesi">Süleyman Şah Üniversitesi</option>
+								<option value="Şifa Üniversitesi">Şifa Üniversitesi</option>
+								<option value="Şırnak Üniversitesi">Şırnak Üniversitesi</option>
+								<option value="TED Üniversitesi">TED Üniversitesi</option>
+								<option value="TOBB Ekonomi ve Teknoloji Üniversitesi">TOBB Ekonomi ve Teknoloji Üniversitesi</option>
+								<option value="Toros Üniversitesi">Toros Üniversitesi</option>
+								<option value="Trakya Üniversitesi">Trakya Üniversitesi</option>
+								<option value="Tunceli Üniversitesi">Tunceli Üniversitesi</option>
+								<option value="Turgut Özal Üniversitesi">Turgut Özal Üniversitesi</option>
+								<option value="Türk Alman Üniversitesi">Türk Alman Üniversitesi</option>
+								<option value="Türk Hava Kurumu Üniversitesi">Türk Hava Kurumu Üniversitesi</option>
+								<option value="Türkiye Uluslararası İslam, Bilim ve Teknoloji Üniversitesi">Türkiye Uluslararası İslam, Bilim ve Teknoloji Üniversitesi</option>
+								<option value="Ufuk Üniversitesi">Ufuk Üniversitesi</option>
+								<option value="Uludağ Üniversitesi">Uludağ Üniversitesi</option>
+								<option value="Uluslararası Antalya Üniversitesi">Uluslararası Antalya Üniversitesi</option>
+								<option value="Uşak Üniversitesi">Uşak Üniversitesi</option>
+								<option value="Üsküdar Üniversitesi">Üsküdar Üniversitesi</option>
+								<option value="Yalova Üniversitesi">Yalova Üniversitesi</option>
+								<option value="Yaşar Üniversitesi">Yaşar Üniversitesi</option>
+								<option value="Yeditepe Üniversitesi">Yeditepe Üniversitesi</option>
+								<option value="Yeni Yüzyıl Üniversitesi">Yeni Yüzyıl Üniversitesi</option>
+								<option value="Yüksek İhtisas Üniversitesi**">Yüksek İhtisas Üniversitesi**</option>
+								<option value="Yüzüncü Yıl Üniversitesi">Yüzüncü Yıl Üniversitesi</option>
+								<option value="Yıldırım Beyazıt Üniversitesi">Yıldırım Beyazıt Üniversitesi</option>
+								<option value="Yıldız Teknik Üniversitesi">Yıldız Teknik Üniversitesi</option>
+								<option value="Zirve Üniversitesi">Zirve Üniversitesi</option>
+
+							  </select>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupDepartment">Department</label>
+							<select class="form-control" id="signupDepartment" required=""><option disabled="" selected="" value="">Select</option><option value="Acil Durum ve Afet Yönetimi (Önlisans)">Acil Durum ve Afet Yönetimi (Önlisans)</option><option value="Acil Yardım ve Afet Yönetimi">Acil Yardım ve Afet Yönetimi</option><option value="Adalet (Önlisans)">Adalet (Önlisans)</option><option value="Adli Bilişim Mühendisliği">Adli Bilişim Mühendisliği</option><option value="Ağaç İşleri Endüstri Mühendisliği">Ağaç İşleri Endüstri Mühendisliği</option><option value="Ağız ve Diş Sağlığı (Önlisans)">Ağız ve Diş Sağlığı (Önlisans)</option><option value="Aile ve Tüketici Bilimleri">Aile ve Tüketici Bilimleri</option><option value="Aktüerya">Aktüerya</option><option value="Aktüerya Bilimleri">Aktüerya Bilimleri</option><option value="Almanca Öğretmenliği">Almanca Öğretmenliği</option><option value="Alman Dili ve Edebiyatı">Alman Dili ve Edebiyatı</option><option value="Alternatif Enerji Kaynakları Teknolojisi (Önlisans)">Alternatif Enerji Kaynakları Teknolojisi (Önlisans)</option><option value="Ameliyathane Hizmetleri (Önlisans)">Ameliyathane Hizmetleri (Önlisans)</option><option value="Amerikan Kültürü ve Edebiyatı">Amerikan Kültürü ve Edebiyatı</option><option value="Anestezi (Önlisans)">Anestezi (Önlisans)</option><option value="Animasyon (Çizgi Film)">Animasyon (Çizgi Film)</option><option value="Antrenörlük Eğitimi">Antrenörlük Eğitimi</option><option value="Antropoloji">Antropoloji</option><option value="Arapça Öğretmenliği">Arapça Öğretmenliği</option><option value="Arap Dili ve Edebiyatı">Arap Dili ve Edebiyatı</option><option value="Arıcılık (Önlisans)">Arıcılık (Önlisans)</option><option value="Arkeoloji">Arkeoloji</option><option value="Arkeoloji ve Sanat Tarihi">Arkeoloji ve Sanat Tarihi</option><option value="Arnavutça">Arnavutça</option><option value="Aşçılık (Önlisans)">Aşçılık (Önlisans)</option><option value="Astronomi ve Uzay Bilimleri">Astronomi ve Uzay Bilimleri</option><option value="Atçılık ve Antrenörlüğü (Önlisans)">Atçılık ve Antrenörlüğü (Önlisans)</option><option value="Avcılık ve Yaban Hayatı (Önlisans)">Avcılık ve Yaban Hayatı (Önlisans)</option><option value="Avrupa Birliği İlişkileri">Avrupa Birliği İlişkileri</option><option value="Ayakkabı Tasarım ve Üretimi (Önlisans)">Ayakkabı Tasarım ve Üretimi (Önlisans)</option><option value="Azerbaycan Türkçesi ve Edebiyatı">Azerbaycan Türkçesi ve Edebiyatı</option><option value="Bağcılık (Önlisans)">Bağcılık (Önlisans)</option><option value="Bahçe Bitkileri">Bahçe Bitkileri</option><option value="Bahçe Tarımı (Önlisans)">Bahçe Tarımı (Önlisans)</option><option value="Balıkçılık Teknolojisi Mühendisliği">Balıkçılık Teknolojisi Mühendisliği</option><option value="Balon Pilotluğu (Önlisans)">Balon Pilotluğu (Önlisans)</option><option value="Bankacılık">Bankacılık</option><option value="Bankacılık ve Finans">Bankacılık ve Finans</option><option value="Bankacılık ve Sigortacılık (Önlisans)">Bankacılık ve Sigortacılık (Önlisans)</option><option value="Bankacılık ve Sigortacılık">Bankacılık ve Sigortacılık</option><option value="Basım ve Yayın Teknolojileri (Önlisans)">Basım ve Yayın Teknolojileri (Önlisans)</option><option value="Basın ve Yayıncılık (Önlisans)">Basın ve Yayıncılık (Önlisans)</option><option value="Basın Yayın">Basın Yayın</option><option value="Beden Eğitimi ve Spor Öğretmenliği">Beden Eğitimi ve Spor Öğretmenliği</option><option value="Beslenme ve Diyetetik">Beslenme ve Diyetetik</option><option value="Beton Teknolojisi (Önlisans)">Beton Teknolojisi (Önlisans)</option><option value="Bilgi Güvenliği Teknolojisi (Önlisans)">Bilgi Güvenliği Teknolojisi (Önlisans)</option><option value="Bilgisayar Bilimleri">Bilgisayar Bilimleri</option><option value="Bilgisayar Destekli Tasarım ve Animasyon (Önlisans)">Bilgisayar Destekli Tasarım ve Animasyon (Önlisans)</option><option value="Bilgisayar-Enformatik">Bilgisayar-Enformatik</option><option value="Bilgisayar Mühendisliği">Bilgisayar Mühendisliği</option><option value="Bilgisayar Operatörlüğü (Önlisans)">Bilgisayar Operatörlüğü (Önlisans)</option><option value="Bilgisayar Programcılığı (Önlisans)">Bilgisayar Programcılığı (Önlisans)</option><option value="Bilgisayar Teknolojisi (Önlisans)">Bilgisayar Teknolojisi (Önlisans)</option><option value="Bilgisayar Teknolojisi ve Bilişim Sistemleri">Bilgisayar Teknolojisi ve Bilişim Sistemleri</option><option value="Bilgisayar ve Öğretim Teknolojileri Öğretmenliği">Bilgisayar ve Öğretim Teknolojileri Öğretmenliği</option><option value="Bilgi ve Belge Yönetimi">Bilgi ve Belge Yönetimi</option><option value="Bilgi Yönetimi (Önlisans)">Bilgi Yönetimi (Önlisans)</option><option value="Bilim Tarihi">Bilim Tarihi</option><option value="Bilişim Sistemleri Mühendisliği">Bilişim Sistemleri Mühendisliği</option><option value="Bilişim Sistemleri ve Teknolojileri">Bilişim Sistemleri ve Teknolojileri</option><option value="Bitki Koruma">Bitki Koruma</option><option value="Bitki Koruma (Önlisans)">Bitki Koruma (Önlisans)</option><option value="Biyokimya">Biyokimya</option><option value="Biyokimya (Önlisans)">Biyokimya (Önlisans)</option><option value="Biyoloji">Biyoloji</option><option value="Biyoloji Öğretmenliği">Biyoloji Öğretmenliği</option><option value="Biyomedikal Cihaz Teknolojisi (Önlisans)">Biyomedikal Cihaz Teknolojisi (Önlisans)</option><option value="Biyomedikal Mühendisliği">Biyomedikal Mühendisliği</option><option value="Biyomühendislik">Biyomühendislik</option><option value="Biyosistem Mühendisliği">Biyosistem Mühendisliği</option><option value="Biyoteknoloji">Biyoteknoloji</option><option value="Biyoteknoloji ve Moleküler Biyoloji">Biyoteknoloji ve Moleküler Biyoloji</option><option value="Boşnakça">Boşnakça</option><option value="Boya Teknolojisi (Önlisans)">Boya Teknolojisi (Önlisans)</option><option value="Bulgar Dili ve Edebiyatı">Bulgar Dili ve Edebiyatı</option><option value="Büro Yönetimi ve Yönetici Asistanlığı (Önlisans)">Büro Yönetimi ve Yönetici Asistanlığı (Önlisans)</option><option value="Çağdaş Türk Lehçeleri ve Edebiyatları">Çağdaş Türk Lehçeleri ve Edebiyatları</option><option value="Çağdaş Yunan Dili ve Edebiyatı">Çağdaş Yunan Dili ve Edebiyatı</option><option value="Çağrı Merkezi Hizmetleri (Önlisans)">Çağrı Merkezi Hizmetleri (Önlisans)</option><option value="Çalışma Ekonomisi ve Endüstri İlişkileri">Çalışma Ekonomisi ve Endüstri İlişkileri</option><option value="Canlandırma Filmi Tasarım ve Yönetimi">Canlandırma Filmi Tasarım ve Yönetimi</option><option value="Çay Tarımı ve İşletme Teknolojisi (Önlisans)">Çay Tarımı ve İşletme Teknolojisi (Önlisans)</option><option value="Çerkez Dili ve Edebiyatı">Çerkez Dili ve Edebiyatı</option><option value="Cevher Hazırlama Mühendisliği">Cevher Hazırlama Mühendisliği</option><option value="Çeviribilim">Çeviribilim</option><option value="Çevre Koruma ve Kontrol (Önlisans)">Çevre Koruma ve Kontrol (Önlisans)</option><option value="Çevre Mühendisliği">Çevre Mühendisliği</option><option value="Çevre Sağlığı (Önlisans)">Çevre Sağlığı (Önlisans)</option><option value="Çevre Temizliği ve Denetimi (Önlisans)">Çevre Temizliği ve Denetimi (Önlisans)</option><option value="Çim Alan Tesisi ve Yönetimi (Önlisans)">Çim Alan Tesisi ve Yönetimi (Önlisans)</option><option value="Çin Dili ve Edebiyatı">Çin Dili ve Edebiyatı</option><option value="Çocuk Gelişimi (Önlisans)">Çocuk Gelişimi (Önlisans)</option><option value="Çocuk Gelişimi">Çocuk Gelişimi</option><option value="Çocuk Koruma ve Bakım Hizmetleri (Önlisans)">Çocuk Koruma ve Bakım Hizmetleri (Önlisans)</option><option value="Coğrafi Bilgi Sistemleri (Önlisans)">Coğrafi Bilgi Sistemleri (Önlisans)</option><option value="Coğrafya">Coğrafya</option><option value="Coğrafya Öğretmenliği">Coğrafya Öğretmenliği</option><option value="Çorap ve Moda Tasarımı (Önlisans)">Çorap ve Moda Tasarımı (Önlisans)</option><option value="Denizcilik İşletmeleri Yönetimi">Denizcilik İşletmeleri Yönetimi</option><option value="Deniz Ulaştırma İşletme Mühendisliği">Deniz Ulaştırma İşletme Mühendisliği</option><option value="Deniz Ulaştırma ve İşletme (Önlisans)">Deniz Ulaştırma ve İşletme (Önlisans)</option><option value="Deniz ve Liman İşletmeciliği (Önlisans)">Deniz ve Liman İşletmeciliği (Önlisans)</option><option value="Deri Konfeksiyon (Önlisans)">Deri Konfeksiyon (Önlisans)</option><option value="Deri Mühendisliği">Deri Mühendisliği</option><option value="Deri Teknolojisi (Önlisans)">Deri Teknolojisi (Önlisans)</option><option value="Dijital Oyun Tasarımı">Dijital Oyun Tasarımı</option><option value="Dilbilim">Dilbilim</option><option value="Dil ve Konuşma Terapisi">Dil ve Konuşma Terapisi</option><option value="Diş Hekimliği">Diş Hekimliği</option><option value="Diş Protez Teknolojisi (Önlisans)">Diş Protez Teknolojisi (Önlisans)</option><option value="Dış Ticaret (Önlisans)">Dış Ticaret (Önlisans)</option><option value="Diyaliz (Önlisans)">Diyaliz (Önlisans)</option><option value="Doğalgaz ve Tesisatı Teknolojisi (Önlisans)">Doğalgaz ve Tesisatı Teknolojisi (Önlisans)</option><option value="Doğal Yapı Taşları Teknolojisi (Önlisans)">Doğal Yapı Taşları Teknolojisi (Önlisans)</option><option value="Döküm (Önlisans)">Döküm (Önlisans)</option><option value="Ebelik">Ebelik</option><option value="Eczacılık">Eczacılık</option><option value="Eczane Hizmetleri (Önlisans)">Eczane Hizmetleri (Önlisans)</option><option value="Ekonometri">Ekonometri</option><option value="Ekonomi ve Finans">Ekonomi ve Finans</option><option value="Elektrik (Önlisans)">Elektrik (Önlisans)</option><option value="Elektrik Elektronik Mühendisliği">Elektrik Elektronik Mühendisliği</option><option value="Elektrik Enerjisi Üretim, İletim ve Dağıtımı (Önlisans)">Elektrik Enerjisi Üretim, İletim ve Dağıtımı (Önlisans)</option><option value="Elektrikli Cihaz Teknolojisi (Önlisans)">Elektrikli Cihaz Teknolojisi (Önlisans)</option><option value="Elektrik Mühendisliği">Elektrik Mühendisliği</option><option value="Elektromekanik Taşıyıcılar (Önlisans)">Elektromekanik Taşıyıcılar (Önlisans)</option><option value="Elektronik Haberleşme Teknolojisi (Önlisans)">Elektronik Haberleşme Teknolojisi (Önlisans)</option><option value="Elektronik Mühendisliği">Elektronik Mühendisliği</option><option value="Elektronik Teknolojisi (Önlisans)">Elektronik Teknolojisi (Önlisans)</option><option value="Elektronik ve Haberleşme Mühendisliği">Elektronik ve Haberleşme Mühendisliği</option><option value="Elektronörofizyoloji (Önlisans)">Elektronörofizyoloji (Önlisans)</option><option value="El Sanatları">El Sanatları</option><option value="El Sanatları Tasarımı ve Üretimi">El Sanatları Tasarımı ve Üretimi</option><option value="Emlak ve Emlak Yönetimi (Önlisans)">Emlak ve Emlak Yönetimi (Önlisans)</option><option value="Endüstri Mühendisliği">Endüstri Mühendisliği</option><option value="Endüstri Sistemleri Mühendisliği">Endüstri Sistemleri Mühendisliği</option><option value="Endüstri Ürünleri Tasarımı">Endüstri Ürünleri Tasarımı</option><option value="Endüstri Ürünleri Tasarımı (Önlisans)">Endüstri Ürünleri Tasarımı (Önlisans)</option><option value="Endüstriyel Bitkiler Yetiştiriciliği (Önlisans)">Endüstriyel Bitkiler Yetiştiriciliği (Önlisans)</option><option value="Endüstriyel Cam ve Seramik (Önlisans)">Endüstriyel Cam ve Seramik (Önlisans)</option><option value="Endüstriyel Kalıpçılık (Önlisans)">Endüstriyel Kalıpçılık (Önlisans)</option><option value="Endüstriyel Tasarım">Endüstriyel Tasarım</option><option value="Endüstriyel Tavukçuluk (Önlisans)">Endüstriyel Tavukçuluk (Önlisans)</option><option value="Enerji Sistemleri Mühendisliği">Enerji Sistemleri Mühendisliği</option><option value="Enerji Tesisleri İşletmeciliği (Önlisans)">Enerji Tesisleri İşletmeciliği (Önlisans)</option><option value="Enerji ve Malzeme Mühendisliği">Enerji ve Malzeme Mühendisliği</option><option value="Enerji Yönetimi">Enerji Yönetimi</option><option value="Enformasyon Teknolojileri">Enformasyon Teknolojileri</option><option value="Engelli Bakımı ve Rehabilitasyon (Önlisans)">Engelli Bakımı ve Rehabilitasyon (Önlisans)</option><option value="Ergoterapi">Ergoterapi</option><option value="Ermeni Dili ve Edebiyatı">Ermeni Dili ve Edebiyatı</option><option value="Eser Koruma (Önlisans)">Eser Koruma (Önlisans)</option><option value="Eşit Ağırlıklı Programlar">Eşit Ağırlıklı Programlar</option><option value="Eski Yunan Dili ve Edebiyatı">Eski Yunan Dili ve Edebiyatı</option><option value="Et ve Ürünleri Teknolojisi (Önlisans)">Et ve Ürünleri Teknolojisi (Önlisans)</option><option value="Evde Hasta Bakımı (Önlisans)">Evde Hasta Bakımı (Önlisans)</option><option value="Ev İdaresi (Önlisans)">Ev İdaresi (Önlisans)</option><option value="Fars Dili ve Edebiyatı">Fars Dili ve Edebiyatı</option><option value="Felsefe">Felsefe</option><option value="Felsefe Grubu Öğretmenliği">Felsefe Grubu Öğretmenliği</option><option value="Fen Bilgisi Öğretmenliği">Fen Bilgisi Öğretmenliği</option><option value="Fidan Yetiştiriciliği (Önlisans)">Fidan Yetiştiriciliği (Önlisans)</option><option value="Film Tasarımı">Film Tasarımı</option><option value="Finans Matematiği">Finans Matematiği</option><option value="Fındık Eksperliği (Önlisans)">Fındık Eksperliği (Önlisans)</option><option value="Fizik">Fizik</option><option value="Fizik Mühendisliği">Fizik Mühendisliği</option><option value="Fizik Öğretmenliği">Fizik Öğretmenliği</option><option value="Fizyoterapi (Önlisans)">Fizyoterapi (Önlisans)</option><option value="Fizyoterapi ve Rehabilitasyon">Fizyoterapi ve Rehabilitasyon</option><option value="Fotoğrafçılık ve Kameramanlık (Önlisans)">Fotoğrafçılık ve Kameramanlık (Önlisans)</option><option value="Fotoğraf ve Video">Fotoğraf ve Video</option><option value="Fransızca Öğretmenliği">Fransızca Öğretmenliği</option><option value="Fransız Dili ve Edebiyatı">Fransız Dili ve Edebiyatı</option><option value="Gastronomi">Gastronomi</option><option value="Gastronomi ve Mutfak Sanatları">Gastronomi ve Mutfak Sanatları</option><option value="Gayrimenkul ve Varlık Değerleme">Gayrimenkul ve Varlık Değerleme</option><option value="Gazetecilik">Gazetecilik</option><option value="Gaz ve Tesisatı Teknolojisi (Önlisans)">Gaz ve Tesisatı Teknolojisi (Önlisans)</option><option value="Geleneksel El Sanatları (Önlisans)">Geleneksel El Sanatları (Önlisans)</option><option value="Geleneksel Tekstillerin Konservasyonu ve Restorasyonu (Önlisans)">Geleneksel Tekstillerin Konservasyonu ve Restorasyonu (Önlisans)</option><option value="Geleneksel Türk Sanatları">Geleneksel Türk Sanatları</option><option value="Gemi İnşaatı (Önlisans)">Gemi İnşaatı (Önlisans)</option><option value="Gemi İnşaatı ve Gemi Makineleri Mühendisliği">Gemi İnşaatı ve Gemi Makineleri Mühendisliği</option><option value="Gemi Makineleri İşletme (Önlisans)">Gemi Makineleri İşletme (Önlisans)</option><option value="Gemi Makineleri İşletme Mühendisliği">Gemi Makineleri İşletme Mühendisliği</option><option value="Gemi ve Deniz Teknolojisi Mühendisliği">Gemi ve Deniz Teknolojisi Mühendisliği</option><option value="Gemi ve Yat Tasarımı">Gemi ve Yat Tasarımı</option><option value="Genetik ve Biyoinformatik">Genetik ve Biyoinformatik</option><option value="Genetik ve Biyomühendislik">Genetik ve Biyomühendislik</option><option value="Geomatik Mühendisliği">Geomatik Mühendisliği</option><option value="Geoteknik (Önlisans)">Geoteknik (Önlisans)</option><option value="Gerontoloji">Gerontoloji</option><option value="Gıda Kalite Kontrolü ve Analizi (Önlisans)">Gıda Kalite Kontrolü ve Analizi (Önlisans)</option><option value="Gıda Mühendisliği">Gıda Mühendisliği</option><option value="Gıda Teknolojisi">Gıda Teknolojisi</option><option value="Gıda Teknolojisi (Önlisans)">Gıda Teknolojisi (Önlisans)</option><option value="Girişimcilik">Girişimcilik</option><option value="Giyim Üretim Teknolojisi (Önlisans)">Giyim Üretim Teknolojisi (Önlisans)</option><option value="Görme Engelliler Öğretmenliği	">Görme Engelliler Öğretmenliği	</option><option value="Görsel İletişim (Önlisans)">Görsel İletişim (Önlisans)</option><option value="Görsel İletişim">Görsel İletişim</option><option value="Grafik">Grafik</option><option value="Grafik Tasarımı (Önlisans)">Grafik Tasarımı (Önlisans)</option><option value="Grafik Tasarımı">Grafik Tasarımı</option><option value="Gümrük İşletme">Gümrük İşletme</option><option value="Gürcü Dili ve Edebiyatı">Gürcü Dili ve Edebiyatı</option><option value="Halıcılık ve Kilimcilik (Önlisans)">Halıcılık ve Kilimcilik (Önlisans)</option><option value="Halkbilim">Halkbilim</option><option value="Halkla İlişkiler">Halkla İlişkiler</option><option value="Halkla İlişkiler ve Reklamcılık">Halkla İlişkiler ve Reklamcılık</option><option value="Halkla İlişkiler ve Tanıtım (Önlisans)">Halkla İlişkiler ve Tanıtım (Önlisans)</option><option value="Halkla İlişkiler ve Tanıtım">Halkla İlişkiler ve Tanıtım</option><option value="Harita Mühendisliği">Harita Mühendisliği</option><option value="Harita ve Kadastro (Önlisans)">Harita ve Kadastro (Önlisans)</option><option value="Havacılık Elektrik ve Elektroniği">Havacılık Elektrik ve Elektroniği</option><option value="Havacılıkta Yer Hizmetleri Yönetimi (Önlisans)">Havacılıkta Yer Hizmetleri Yönetimi (Önlisans)</option><option value="Havacılık ve Uzay Mühendisliği">Havacılık ve Uzay Mühendisliği</option><option value="Hava Lojistiği (Önlisans)">Hava Lojistiği (Önlisans)</option><option value="Hayvansal Üretim">Hayvansal Üretim</option><option value="Hayvansal Üretim (Önlisans)">Hayvansal Üretim (Önlisans)</option><option value="Hemşirelik">Hemşirelik</option><option value="Hemşirelik ve Sağlık Hizmetleri">Hemşirelik ve Sağlık Hizmetleri</option><option value="Hidrojeoloji Mühendisliği">Hidrojeoloji Mühendisliği</option><option value="Hindoloji">Hindoloji</option><option value="Hititoloji">Hititoloji</option><option value="Hukuk">Hukuk</option><option value="Hungaroloji">Hungaroloji</option><option value="İbrani Dili ve Edebiyatı">İbrani Dili ve Edebiyatı</option><option value="İç Mekan Tasarımı (Önlisans)">İç Mekan Tasarımı (Önlisans)</option><option value="İç Mimarlık">İç Mimarlık</option><option value="İç Mimarlık ve Çevre Tasarımı">İç Mimarlık ve Çevre Tasarımı</option><option value="İklimlendirme ve Soğutma Teknolojisi (Önlisans)">İklimlendirme ve Soğutma Teknolojisi (Önlisans)</option><option value="İkram Hizmetleri (Önlisans)">İkram Hizmetleri (Önlisans)</option><option value="İktisat (Ekonomi)">İktisat (Ekonomi)</option><option value="İlahiyat (Önlisans)">İlahiyat (Önlisans)</option><option value="İlahiyat">İlahiyat</option><option value="İletişim">İletişim</option><option value="İletişim Bilimleri">İletişim Bilimleri</option><option value="İletişim Sanatları">İletişim Sanatları</option><option value="İletişim Tasarımı">İletişim Tasarımı</option><option value="İletişim ve Tasarım">İletişim ve Tasarım</option><option value="İlköğretim Din Kültürü ve Ahlak Bilgisi Öğretmenliği">İlköğretim Din Kültürü ve Ahlak Bilgisi Öğretmenliği</option><option value="İlköğretim Matematik Öğretmenliği">İlköğretim Matematik Öğretmenliği</option><option value="İlk ve Acil Yardım (Önlisans)">İlk ve Acil Yardım (Önlisans)</option><option value="İmalat Mühendisliği">İmalat Mühendisliği</option><option value="İngilizce Öğretmenliği">İngilizce Öğretmenliği</option><option value="İngiliz Dil Bilimi">İngiliz Dil Bilimi</option><option value="İngiliz Dili ve Edebiyatı">İngiliz Dili ve Edebiyatı</option><option value="İngiliz Dili ve Karşılaştırmalı Edebiyat">İngiliz Dili ve Karşılaştırmalı Edebiyat</option><option value="İnşaat Mühendisliği">İnşaat Mühendisliği</option><option value="İnşaat Teknolojisi (Önlisans)">İnşaat Teknolojisi (Önlisans)</option><option value="İnsan Kaynakları Yönetimi">İnsan Kaynakları Yönetimi</option><option value="İnsan Kaynakları Yönetimi (Önlisans)">İnsan Kaynakları Yönetimi (Önlisans)</option><option value="İnternet ve Ağ Teknolojileri (Önlisans)">İnternet ve Ağ Teknolojileri (Önlisans)</option><option value="İşitme Engelliler Öğretmenliği">İşitme Engelliler Öğretmenliği</option><option value="İşletme">İşletme</option><option value="İşletme Bilgi Yönetimi">İşletme Bilgi Yönetimi</option><option value="İşletme - Ekonomi">İşletme - Ekonomi</option><option value="İşletme Enformatiği">İşletme Enformatiği</option><option value="İşletme Mühendisliği">İşletme Mühendisliği</option><option value="İşletme Yönetimi (Önlisans)">İşletme Yönetimi (Önlisans)</option><option value="İş Makineleri Operatörlüğü (Önlisans)">İş Makineleri Operatörlüğü (Önlisans)</option><option value="İspanyol Dili ve Edebiyatı">İspanyol Dili ve Edebiyatı</option><option value="İş Sağlığı ve Güvenliği">İş Sağlığı ve Güvenliği</option><option value="İş Sağlığı ve Güvenliği (Önlisans)">İş Sağlığı ve Güvenliği (Önlisans)</option><option value="İstatistik">İstatistik</option><option value="İstatistik ve Bilgisayar Bilimleri">İstatistik ve Bilgisayar Bilimleri</option><option value="İş ve Uğraşı Terapisi (Önlisans)">İş ve Uğraşı Terapisi (Önlisans)</option><option value="İtalyan Dili ve Edebiyatı">İtalyan Dili ve Edebiyatı</option><option value="Japonca Öğretmenliği">Japonca Öğretmenliği</option><option value="Japon Dili ve Edebiyatı">Japon Dili ve Edebiyatı</option><option value="Jeodezi ve Fotogrametri Mühendisliği">Jeodezi ve Fotogrametri Mühendisliği</option><option value="Jeofizik Mühendisliği">Jeofizik Mühendisliği</option><option value="Jeoloji Mühendisliği">Jeoloji Mühendisliği</option><option value="Kağıt Teknolojisi (Önlisans)">Kağıt Teknolojisi (Önlisans)</option><option value="Kamu Yönetimi">Kamu Yönetimi</option><option value="Kanatlı Hayvan Yetiştiriciliği">Kanatlı Hayvan Yetiştiriciliği</option><option value="Karşılaştırmalı Edebiyat">Karşılaştırmalı Edebiyat</option><option value="Kaynak Teknolojisi (Önlisans)">Kaynak Teknolojisi (Önlisans)</option><option value="Kentsel Tasarım ve Peyzaj Mimarisi">Kentsel Tasarım ve Peyzaj Mimarisi</option><option value="Kesme Çiçek Yetiştiriciliği (Önlisans)">Kesme Çiçek Yetiştiriciliği (Önlisans)</option><option value="Kimya">Kimya</option><option value="Kimya Biyoloji Mühendisliği">Kimya Biyoloji Mühendisliği</option><option value="Kimya Mühendisliği">Kimya Mühendisliği</option><option value="Kimya Mühendisliği ve Uygulamalı Kimya">Kimya Mühendisliği ve Uygulamalı Kimya</option><option value="Kimya Öğretmenliği">Kimya Öğretmenliği</option><option value="Kimya Teknolojisi (Önlisans)">Kimya Teknolojisi (Önlisans)</option><option value="Kimya ve Süreç Mühendisliği">Kimya ve Süreç Mühendisliği</option><option value="Klasik Arkeoloji">Klasik Arkeoloji</option><option value="Konaklama İşletmeciliği">Konaklama İşletmeciliği</option><option value="Konaklama ve Turizm İşletmeciliği">Konaklama ve Turizm İşletmeciliği</option><option value="Kontrol Mühendisliği">Kontrol Mühendisliği</option><option value="Kontrol ve Otomasyon Mühendisliği">Kontrol ve Otomasyon Mühendisliği</option><option value="Kontrol ve Otomasyon Teknolojisi (Önlisans)">Kontrol ve Otomasyon Teknolojisi (Önlisans)</option><option value="Kooperatifçilik (Önlisans)">Kooperatifçilik (Önlisans)</option><option value="Kore Dili ve Edebiyatı">Kore Dili ve Edebiyatı</option><option value="Kozmetik Teknolojisi (Önlisans)">Kozmetik Teknolojisi (Önlisans)</option><option value="Kültür Balıkçılığı (Önlisans)">Kültür Balıkçılığı (Önlisans)</option><option value="Kültürel Miras ve Turizm (Önlisans)">Kültürel Miras ve Turizm (Önlisans)</option><option value="Kültür Varlıklarını Koruma ve Onarım">Kültür Varlıklarını Koruma ve Onarım</option><option value="Kümes Hayvanları Yetiştiriciliği (Önlisans)">Kümes Hayvanları Yetiştiriciliği (Önlisans)</option><option value="Küresel ve Uluslararası İlişkiler">Küresel ve Uluslararası İlişkiler</option><option value="Kürt Dili ve Edebiyatı">Kürt Dili ve Edebiyatı</option><option value="Kuruyemiş Üretimi ve Teknolojisi (Önlisans)">Kuruyemiş Üretimi ve Teknolojisi (Önlisans)</option><option value="Kuyumculuk ve Takı Tasarımı (Önlisans)">Kuyumculuk ve Takı Tasarımı (Önlisans)</option><option value="Laborant ve Veteriner Sağlık (Önlisans)">Laborant ve Veteriner Sağlık (Önlisans)</option><option value="Laboratuvar Teknolojisi (Önlisans)">Laboratuvar Teknolojisi (Önlisans)</option><option value="Lastik ve Plastik Teknolojisi (Önlisans)">Lastik ve Plastik Teknolojisi (Önlisans)</option><option value="Latin Dili ve Edebiyatı">Latin Dili ve Edebiyatı</option><option value="Leh Dili ve Edebiyatı">Leh Dili ve Edebiyatı</option><option value="Lif ve Polimer Mühendisliği">Lif ve Polimer Mühendisliği</option><option value="Lojistik (Önlisans)">Lojistik (Önlisans)</option><option value="Lojistik Yönetimi">Lojistik Yönetimi</option><option value="Maden Mühendisliği">Maden Mühendisliği</option><option value="Maden Teknolojisi (Önlisans)">Maden Teknolojisi (Önlisans)</option><option value="Makine (Önlisans)">Makine (Önlisans)</option><option value="Makine Mühendisliği">Makine Mühendisliği</option><option value="Makine, Resim ve Konstrüksiyon (Önlisans)">Makine, Resim ve Konstrüksiyon (Önlisans)</option><option value="Makine ve İmalat Mühendisliği">Makine ve İmalat Mühendisliği</option><option value="Makine ve Malzeme Mühendisliği">Makine ve Malzeme Mühendisliği</option><option value="Maliye (Önlisans)">Maliye (Önlisans)</option><option value="Maliye">Maliye</option><option value="Malzeme Mühendisliği">Malzeme Mühendisliği</option><option value="Mantarcılık (Önlisans)">Mantarcılık (Önlisans)</option><option value="Marina İşletme (Önlisans)">Marina İşletme (Önlisans)</option><option value="Marka İletişimi (Önlisans)">Marka İletişimi (Önlisans)</option><option value="Matematik">Matematik</option><option value="Matematik Bilgisayar">Matematik Bilgisayar</option><option value="Matematik Mühendisliği">Matematik Mühendisliği</option><option value="Matematik Öğretmenliği">Matematik Öğretmenliği</option><option value="Medya ve İletişim (Önlisans)">Medya ve İletişim (Önlisans)</option><option value="Medya ve İletişim Sistemleri">Medya ve İletişim Sistemleri</option><option value="Mekatronik (Önlisans)">Mekatronik (Önlisans)</option><option value="Mekatronik Mühendisliği">Mekatronik Mühendisliği</option><option value="Menkul Kıymetler ve Sermaye Piyasası (Önlisans)">Menkul Kıymetler ve Sermaye Piyasası (Önlisans)</option><option value="Metalurji (Önlisans)">Metalurji (Önlisans)</option><option value="Metalurji ve Malzeme Mühendisliği">Metalurji ve Malzeme Mühendisliği</option><option value="Meteoroloji Mühendisliği">Meteoroloji Mühendisliği</option><option value="Meyve ve Sebze İşleme Teknolojisi (Önlisans)">Meyve ve Sebze İşleme Teknolojisi (Önlisans)</option><option value="Mimari Dekoratif Sanatlar (Önlisans)">Mimari Dekoratif Sanatlar (Önlisans)</option><option value="Mimari Restorasyon (Önlisans)">Mimari Restorasyon (Önlisans)</option><option value="Mimarlık">Mimarlık</option><option value="Mobil Teknolojileri (Önlisans)">Mobil Teknolojileri (Önlisans)</option><option value="Mobilya Üretimi ve İç Mekan Tasarımı">Mobilya Üretimi ve İç Mekan Tasarımı</option><option value="Mobilya ve Dekorasyon (Önlisans)">Mobilya ve Dekorasyon (Önlisans)</option><option value="Moda Tasarımı (Önlisans)">Moda Tasarımı (Önlisans)</option><option value="Moda Tasarımı">Moda Tasarımı</option><option value="Moda Yönetimi (Önlisans)">Moda Yönetimi (Önlisans)</option><option value="Moleküler Biyoloji ve Genetik">Moleküler Biyoloji ve Genetik</option><option value="Mücevherat Mühendisliği">Mücevherat Mühendisliği</option><option value="Muhasebe">Muhasebe</option><option value="Muhasebe Bilgi Sistemleri">Muhasebe Bilgi Sistemleri</option><option value="Muhasebe ve Finans Yönetimi">Muhasebe ve Finans Yönetimi</option><option value="Muhasebe ve Vergi Uygulamaları (Önlisans)">Muhasebe ve Vergi Uygulamaları (Önlisans)</option><option value="Mühendislik ve Doğa Bilimleri Programları">Mühendislik ve Doğa Bilimleri Programları</option><option value="Mütercim Tercümanlık - Almanca">Mütercim Tercümanlık - Almanca</option><option value="Mütercim Tercümanlık - Arapça">Mütercim Tercümanlık - Arapça</option><option value="Mütercim Tercümanlık - Bulgarca">Mütercim Tercümanlık - Bulgarca</option><option value="Mütercim Tercümanlık - Çince">Mütercim Tercümanlık - Çince</option><option value="Mütercim Tercümanlık – Farsça">Mütercim Tercümanlık – Farsça</option><option value="Mütercim Tercümanlık - Fransızca">Mütercim Tercümanlık - Fransızca</option><option value="Mütercim Tercümanlık - İngilizce">Mütercim Tercümanlık - İngilizce</option><option value="Mütercim Tercümanlık - İngilizce Fransızca Türkçe">Mütercim Tercümanlık - İngilizce Fransızca Türkçe</option><option value="Mütercim Tercümanlık - Rusça">Mütercim Tercümanlık - Rusça</option><option value="Mütercim Tercümanlık - Türkçe Almanca İngilizce">Mütercim Tercümanlık - Türkçe Almanca İngilizce</option><option value="Müzecilik">Müzecilik</option><option value="Nükleer Enerji Mühendisliği">Nükleer Enerji Mühendisliği</option><option value="Nükleer Teknoloji ve Radyasyon Güvenliği (Önlisans)">Nükleer Teknoloji ve Radyasyon Güvenliği (Önlisans)</option><option value="Nükleer Tıp Teknikleri (Önlisans)">Nükleer Tıp Teknikleri (Önlisans)</option><option value="Odyoloji">Odyoloji</option><option value="Odyometri (Önlisans)">Odyometri (Önlisans)</option><option value="Okul Öncesi Öğretmenliği">Okul Öncesi Öğretmenliği</option><option value="Optik ve Akustik Mühendisliği">Optik ve Akustik Mühendisliği</option><option value="Optisyenlik (Önlisans)">Optisyenlik (Önlisans)</option><option value="Organik Tarım (Önlisans)">Organik Tarım (Önlisans)</option><option value="Organik Tarım İşletmeciliği">Organik Tarım İşletmeciliği</option><option value="Ormancılık ve Orman Ürünleri (Önlisans)">Ormancılık ve Orman Ürünleri (Önlisans)</option><option value="Orman Endüstri Mühendisliği">Orman Endüstri Mühendisliği</option><option value="Orman Mühendisliği">Orman Mühendisliği</option><option value="Ortez-Protez">Ortez-Protez</option><option value="Ortopedik Protez ve Ortez (Önlisans)">Ortopedik Protez ve Ortez (Önlisans)</option><option value="Otel Yöneticiliği">Otel Yöneticiliği</option><option value="Oto Boya ve Karoseri (Önlisans)">Oto Boya ve Karoseri (Önlisans)</option><option value="Otobüs Kaptanlığı (Önlisans)">Otobüs Kaptanlığı (Önlisans)</option><option value="Otomotiv Mühendisliği">Otomotiv Mühendisliği</option><option value="Otomotiv Teknolojisi (Önlisans)">Otomotiv Teknolojisi (Önlisans)</option><option value="Otopsi Yardımcılığı (Önlisans)">Otopsi Yardımcılığı (Önlisans)</option><option value="Özel Eğitim Öğretmenliği">Özel Eğitim Öğretmenliği</option><option value="Özel Güvenlik ve Koruma (Önlisans)">Özel Güvenlik ve Koruma (Önlisans)</option><option value="Patoloji Laboratuvar Teknikleri (Önlisans)">Patoloji Laboratuvar Teknikleri (Önlisans)</option><option value="Pazarlama (Önlisans)">Pazarlama (Önlisans)</option><option value="Perakende Satış ve Mağaza Yönetimi (Önlisans)">Perakende Satış ve Mağaza Yönetimi (Önlisans)</option><option value="Perfüzyon">Perfüzyon</option><option value="Perfüzyon Teknikleri (Önlisans)">Perfüzyon Teknikleri (Önlisans)</option><option value="Petrol ve Doğalgaz Mühendisliği">Petrol ve Doğalgaz Mühendisliği</option><option value="Peyzaj Mimarlığı">Peyzaj Mimarlığı</option><option value="Peyzaj ve Süs Bitkileri (Önlisans)">Peyzaj ve Süs Bitkileri (Önlisans)</option><option value="Pilotaj">Pilotaj</option><option value="Podoloji (Önlisans)">Podoloji (Önlisans)</option><option value="Polimer Mühendisliği">Polimer Mühendisliği</option><option value="Polonya Dili ve Kültürü">Polonya Dili ve Kültürü</option><option value="Posta Hizmetleri (Önlisans)">Posta Hizmetleri (Önlisans)</option><option value="Prehistorya">Prehistorya</option><option value="Protohistorya ve Ön Asya Arkeolojisi">Protohistorya ve Ön Asya Arkeolojisi</option><option value="Psikoloji">Psikoloji</option><option value="Radyo, Televizyon ve Sinema">Radyo, Televizyon ve Sinema</option><option value="Radyoterapi (Önlisans)">Radyoterapi (Önlisans)</option><option value="Radyo ve Televizyon Programcılığı (Önlisans)">Radyo ve Televizyon Programcılığı (Önlisans)</option><option value="Radyo ve Televizyon Teknolojisi (Önlisans)">Radyo ve Televizyon Teknolojisi (Önlisans)</option><option value="Rafineri ve Petrokimya Teknolojisi (Önlisans)">Rafineri ve Petrokimya Teknolojisi (Önlisans)</option><option value="Raylı Sistemler Elektrik ve Elektronik Teknolojisi (Önlisans)">Raylı Sistemler Elektrik ve Elektronik Teknolojisi (Önlisans)</option><option value="Raylı Sistemler İşletmeciliği (Önlisans)">Raylı Sistemler İşletmeciliği (Önlisans)</option><option value="Raylı Sistemler Makine Teknolojisi (Önlisans)">Raylı Sistemler Makine Teknolojisi (Önlisans)</option><option value="Raylı Sistemler Makinistlik (Önlisans)">Raylı Sistemler Makinistlik (Önlisans)</option><option value="Raylı Sistemler Mühendisliği">Raylı Sistemler Mühendisliği</option><option value="Raylı Sistemler Yol Teknolojisi (Önlisans)">Raylı Sistemler Yol Teknolojisi (Önlisans)</option><option value="Rehberlik ve Psikolojik Danışmanlık">Rehberlik ve Psikolojik Danışmanlık</option><option value="Reklamcılık">Reklamcılık</option><option value="Reklamcılık (Önlisans)">Reklamcılık (Önlisans)</option><option value="Reklam Tasarımı ve İletişimi">Reklam Tasarımı ve İletişimi</option><option value="Rekreasyon">Rekreasyon</option><option value="Rekreasyon Yönetimi">Rekreasyon Yönetimi</option><option value="Restorasyon ve Konservasyon">Restorasyon ve Konservasyon</option><option value="Rus Dili ve Edebiyatı">Rus Dili ve Edebiyatı</option><option value="Saç Bakımı ve Güzellik Hizmetleri (Önlisans)">Saç Bakımı ve Güzellik Hizmetleri (Önlisans)</option><option value="Sağlık Bilgi Sistemleri Teknikerliği (Önlisans)">Sağlık Bilgi Sistemleri Teknikerliği (Önlisans)</option><option value="Sağlık İdaresi">Sağlık İdaresi</option><option value="Sağlık Kurumları İşletmeciliği">Sağlık Kurumları İşletmeciliği</option><option value="Sağlık Kurumları İşletmeciliği (Önlisans)">Sağlık Kurumları İşletmeciliği (Önlisans)</option><option value="Sağlık Kurumları Yöneticiliği">Sağlık Kurumları Yöneticiliği</option><option value="Sağlık Turizmi İşletmeciliği (Önlisans)">Sağlık Turizmi İşletmeciliği (Önlisans)</option><option value="Sağlık Yönetimi">Sağlık Yönetimi</option><option value="Sahne ve Dekor Tasarımı (Önlisans)">Sahne ve Dekor Tasarımı (Önlisans)</option><option value="Sahne ve Gösteri Sanatları Teknolojisi (Önlisans)">Sahne ve Gösteri Sanatları Teknolojisi (Önlisans)</option><option value="Sanat Tarihi">Sanat Tarihi</option><option value="Sanat ve Sosyal Bilimler Programları">Sanat ve Sosyal Bilimler Programları</option><option value="Şarap Üretim Teknolojisi (Önlisans)">Şarap Üretim Teknolojisi (Önlisans)</option><option value="Şehir ve Bölge Planlama">Şehir ve Bölge Planlama</option><option value="Seracılık (Önlisans)">Seracılık (Önlisans)</option><option value="Seramik, Cam ve Çinicilik (Önlisans)">Seramik, Cam ve Çinicilik (Önlisans)</option><option value="Seramik Mühendisliği">Seramik Mühendisliği</option><option value="Sermaye Piyasası">Sermaye Piyasası</option><option value="Sermaye Piyasası Denetim ve Derecelendirme">Sermaye Piyasası Denetim ve Derecelendirme</option><option value="Seyahat İşletmeciliği">Seyahat İşletmeciliği</option><option value="Seyahat İşletmeciliği ve Turizm Rehberliği">Seyahat İşletmeciliği ve Turizm Rehberliği</option><option value="Sigortacılık">Sigortacılık</option><option value="Sigortacılık ve Risk Yönetimi">Sigortacılık ve Risk Yönetimi</option><option value="Sigortacılık ve Sosyal Güvenlik">Sigortacılık ve Sosyal Güvenlik</option><option value="Sınıf Öğretmenliği">Sınıf Öğretmenliği</option><option value="Sinoloji">Sinoloji</option><option value="Sistem Mühendisliği">Sistem Mühendisliği</option><option value="Sivil Havacılık Kabin Hizmetleri (Önlisans)">Sivil Havacılık Kabin Hizmetleri (Önlisans)</option><option value="Sivil Hava Ulaştırma İşletmeciliği (Önlisans)">Sivil Hava Ulaştırma İşletmeciliği (Önlisans)</option><option value="Sivil Hava Ulaştırma İşletmeciliği">Sivil Hava Ulaştırma İşletmeciliği</option><option value="Sivil Savunma ve İtfaiyecilik (Önlisans)">Sivil Savunma ve İtfaiyecilik (Önlisans)</option><option value="Siyaset Bilimi">Siyaset Bilimi</option><option value="Siyaset Bilimi ve Kamu Yönetimi">Siyaset Bilimi ve Kamu Yönetimi</option><option value="Siyaset Bilimi ve Uluslararası İlişkiler">Siyaset Bilimi ve Uluslararası İlişkiler</option><option value="Sondaj Teknolojisi (Önlisans)">Sondaj Teknolojisi (Önlisans)</option><option value="Sosyal Bilgiler Öğretmenliği">Sosyal Bilgiler Öğretmenliği</option><option value="Sosyal Bilimler (Önlisans)">Sosyal Bilimler (Önlisans)</option><option value="Sosyal Güvenlik (Önlisans)">Sosyal Güvenlik (Önlisans)</option><option value="Sosyal Hizmet">Sosyal Hizmet</option><option value="Sosyal Hizmetler (Önlisans)">Sosyal Hizmetler (Önlisans)</option><option value="Sosyoloji">Sosyoloji</option><option value="Spor Yöneticiliği">Spor Yöneticiliği</option><option value="Spor Yönetimi (Önlisans)">Spor Yönetimi (Önlisans)</option><option value="Su Altı Teknolojisi (Önlisans)">Su Altı Teknolojisi (Önlisans)</option><option value="Sulama Teknolojisi (Önlisans)">Sulama Teknolojisi (Önlisans)</option><option value="Sümeroloji">Sümeroloji</option><option value="Süs Bitkileri Yetiştiriciliği (Önlisans)">Süs Bitkileri Yetiştiriciliği (Önlisans)</option><option value="Süt Teknolojisi">Süt Teknolojisi</option><option value="Süt ve Besi Hayvancılığı (Önlisans)">Süt ve Besi Hayvancılığı (Önlisans)</option><option value="Süt ve Ürünleri Teknolojisi (Önlisans)">Süt ve Ürünleri Teknolojisi (Önlisans)</option><option value="Su Ürünleri İşleme Teknolojisi (Önlisans)">Su Ürünleri İşleme Teknolojisi (Önlisans)</option><option value="Su Ürünleri Mühendisliği">Su Ürünleri Mühendisliği</option><option value="Tahribatsız Muayene (Önlisans)">Tahribatsız Muayene (Önlisans)</option><option value="Takı Tasarımı">Takı Tasarımı</option><option value="Tapu ve Kadastro (Önlisans)">Tapu ve Kadastro (Önlisans)</option><option value="Tarih">Tarih</option><option value="Tarih Öğretmenliği">Tarih Öğretmenliği</option><option value="Tarım (Önlisans)">Tarım (Önlisans)</option><option value="Tarım Ekonomisi">Tarım Ekonomisi</option><option value="Tarım Makineleri">Tarım Makineleri</option><option value="Tarım Makineleri (Önlisans)">Tarım Makineleri (Önlisans)</option><option value="Tarım Makineleri ve Teknolojileri Mühendisliği">Tarım Makineleri ve Teknolojileri Mühendisliği</option><option value="Tarımsal Biyoteknoloji">Tarımsal Biyoteknoloji</option><option value="Tarımsal Genetik Mühendisliği">Tarımsal Genetik Mühendisliği</option><option value="Tarımsal İşletmecilik (Önlisans)">Tarımsal İşletmecilik (Önlisans)</option><option value="Tarımsal Ürünler Muhafaza ve Depolama Teknolojisi (Önlisans)">Tarımsal Ürünler Muhafaza ve Depolama Teknolojisi (Önlisans)</option><option value="Tarımsal Yapılar ve Sulama">Tarımsal Yapılar ve Sulama</option><option value="Tarla Bitkileri">Tarla Bitkileri</option><option value="Tarla Bitkileri (Önlisans)">Tarla Bitkileri (Önlisans)</option><option value="Tekstil Mühendisliği">Tekstil Mühendisliği</option><option value="Tekstil Tasarım">Tekstil Tasarım</option><option value="Tekstil Teknolojisi (Önlisans)">Tekstil Teknolojisi (Önlisans)</option><option value="Televizyon Haberciliği ve Programcılığı">Televizyon Haberciliği ve Programcılığı</option><option value="Tıbbi Dokümantasyon ve Sekreterlik (Önlisans)">Tıbbi Dokümantasyon ve Sekreterlik (Önlisans)</option><option value="Tıbbi Görüntüleme Teknikleri (Önlisans)">Tıbbi Görüntüleme Teknikleri (Önlisans)</option><option value="Tıbbi Laboratuvar Teknikleri (Önlisans)">Tıbbi Laboratuvar Teknikleri (Önlisans)</option><option value="Tıbbi Tanıtım ve Pazarlama (Önlisans)">Tıbbi Tanıtım ve Pazarlama (Önlisans)</option><option value="Tıbbi ve Aromatik Bitkiler (Önlisans)">Tıbbi ve Aromatik Bitkiler (Önlisans)</option><option value="Tıp">Tıp</option><option value="Tıp Mühendisliği">Tıp Mühendisliği</option><option value="Tohumculuk (Önlisans)">Tohumculuk (Önlisans)</option><option value="Toprak Bilimi ve Bitki Besleme">Toprak Bilimi ve Bitki Besleme</option><option value="Turist Rehberliği (Önlisans)">Turist Rehberliği (Önlisans)</option><option value="Turizm Animasyonu (Önlisans)">Turizm Animasyonu (Önlisans)</option><option value="Turizm İşletmeciliği">Turizm İşletmeciliği</option><option value="Turizm Rehberliği (Önlisans)">Turizm Rehberliği (Önlisans)</option><option value="Turizm Rehberliği">Turizm Rehberliği</option><option value="Turizm ve Otelcilik">Turizm ve Otelcilik</option><option value="Turizm ve Otel İşletmeciliği">Turizm ve Otel İşletmeciliği</option><option value="Turizm ve Otel İşletmeciliği (Önlisans)">Turizm ve Otel İşletmeciliği (Önlisans)</option><option value="Turizm ve Seyahat Hizmetleri (Önlisans)">Turizm ve Seyahat Hizmetleri (Önlisans)</option><option value="Turizm Yönetimi (Önlisans)">Turizm Yönetimi (Önlisans)</option><option value="Türkçe Öğretmenliği">Türkçe Öğretmenliği</option><option value="Türk Dili ve Edebiyatı">Türk Dili ve Edebiyatı</option><option value="Türk Dili ve Edebiyatı Öğretmenliği">Türk Dili ve Edebiyatı Öğretmenliği</option><option value="Türk İslam Arkeolojisi">Türk İslam Arkeolojisi</option><option value="Tütün Eksperliği">Tütün Eksperliği</option><option value="Uçak Elektrik Elektronik">Uçak Elektrik Elektronik</option><option value="Uçak Gövde Motor">Uçak Gövde Motor</option><option value="Uçak Mühendisliği">Uçak Mühendisliği</option><option value="Uçak Teknolojisi (Önlisans)">Uçak Teknolojisi (Önlisans)</option><option value="Uçuş Harekat Yöneticiliği (Önlisans)">Uçuş Harekat Yöneticiliği (Önlisans)</option><option value="Ulaştırma Mühendisliği">Ulaştırma Mühendisliği</option><option value="Ulaştırma ve Lojistik">Ulaştırma ve Lojistik</option><option value="Ulaştırma ve Trafik Hizmetleri (Önlisans)">Ulaştırma ve Trafik Hizmetleri (Önlisans)</option><option value="Uluslararası Finans">Uluslararası Finans</option><option value="Uluslararası Girişimcilik">Uluslararası Girişimcilik</option><option value="Uluslararası İlişkiler">Uluslararası İlişkiler</option><option value="Uluslararası İşletme Yönetimi">Uluslararası İşletme Yönetimi</option><option value="Uluslararası Lojistik">Uluslararası Lojistik</option><option value="Uluslararası Lojistik Yönetimi	">Uluslararası Lojistik Yönetimi	</option><option value="Uluslararası Perakende Yönetimi">Uluslararası Perakende Yönetimi</option><option value="Uluslararası Ticaret">Uluslararası Ticaret</option><option value="Uluslararası Ticaret ve Finans">Uluslararası Ticaret ve Finans</option><option value="Uluslararası Ticaret ve İşletmecilik">Uluslararası Ticaret ve İşletmecilik</option><option value="Uluslararası Ticaret ve Lojistik">Uluslararası Ticaret ve Lojistik</option><option value="Uluslararası Ticaret ve Lojistik Yönetimi">Uluslararası Ticaret ve Lojistik Yönetimi</option><option value="Uluslararası Ticaret ve Pazarlama">Uluslararası Ticaret ve Pazarlama</option><option value="Un ve Unlu Mamuller Teknolojisi (Önlisans)">Un ve Unlu Mamuller Teknolojisi (Önlisans)</option><option value="Urdu Dili ve Edebiyatı">Urdu Dili ve Edebiyatı</option><option value="Üretimde Kalite Kontrol (Önlisans)">Üretimde Kalite Kontrol (Önlisans)</option><option value="Üstün Zekalılar Öğretmenliği">Üstün Zekalılar Öğretmenliği</option><option value="Uygulamalı İngilizce ve Çevirmenlik (Önlisans)">Uygulamalı İngilizce ve Çevirmenlik (Önlisans)</option><option value="Uygulamalı İspanyolca ve Çevirmenlik (Önlisans)">Uygulamalı İspanyolca ve Çevirmenlik (Önlisans)</option><option value="Uygulamalı Rusça ve Çevirmenlik (Önlisans)">Uygulamalı Rusça ve Çevirmenlik (Önlisans)</option><option value="Uzay Mühendisliği">Uzay Mühendisliği</option><option value="Veterinerlik">Veterinerlik</option><option value="Yağ Endüstrisi (Önlisans)">Yağ Endüstrisi (Önlisans)</option><option value="Yapı Denetimi (Önlisans)">Yapı Denetimi (Önlisans)</option><option value="Yapı Ressamlığı (Önlisans)">Yapı Ressamlığı (Önlisans)</option><option value="Yapı Tesisat Teknolojisi (Önlisans)">Yapı Tesisat Teknolojisi (Önlisans)</option><option value="Yapı Yalıtım Teknolojisi (Önlisans)">Yapı Yalıtım Teknolojisi (Önlisans)</option><option value="Yaşlı Bakımı (Önlisans)">Yaşlı Bakımı (Önlisans)</option><option value="Yat İşletme ve Yönetimi (Önlisans)">Yat İşletme ve Yönetimi (Önlisans)</option><option value="Yat Kaptanlığı (Önlisans)">Yat Kaptanlığı (Önlisans)</option><option value="Yazılım Mühendisliği">Yazılım Mühendisliği</option><option value="Yem Teknolojisi ve Hayvan Besleme (Önlisans)">Yem Teknolojisi ve Hayvan Besleme (Önlisans)</option><option value="Yerel Yönetimler (Önlisans)">Yerel Yönetimler (Önlisans)</option><option value="Yiyecek İçecek İşletmeciliği">Yiyecek İçecek İşletmeciliği</option><option value="Yönetim Bilimi (İktisadi İdari Bilimler) Programları">Yönetim Bilimi (İktisadi İdari Bilimler) Programları</option><option value="Yönetim Bilişim Sistemleri">Yönetim Bilişim Sistemleri</option><option value="Yunanca">Yunanca</option><option value="Yunan Dili ve Edebiyatı">Yunan Dili ve Edebiyatı</option><option value="Zaza Dili ve Edebiyatı">Zaza Dili ve Edebiyatı</option><option value="Zeytincilik ve Zeytin İşleme Teknolojisi (Önlisans)">Zeytincilik ve Zeytin İşleme Teknolojisi (Önlisans)</option><option value="Zihin Engelliler Öğretmenliği">Zihin Engelliler Öğretmenliği</option><option value="Zootekni">Zootekni</option></select>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="signupEmail">Email</label>
+							<input id="signupEmail" type="email" maxlength="50" class="form-control" required>
+						</div>
+						
+						<div class="form-group">
+							<label class="control-label" for="password">Password</label>
+							<input id="password" type="password" class="form-control" maxlength="8" pattern="^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,8}$" title="Password length should be between 6-8 characters and include at least one capital letter, one number and one special character (other than letters and numbers)">
+							
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="confirm_password">Password Again</label>
+							<input id="confirm_password" type="password" maxlength="8" class="form-control" required>
+						</div>
+						<!-- <label>Or Login via</label>
+								<div class="social-buttons">
+									<a href="#" class="btn btn-fb"><i class="fa fa-facebook"></i> Facebook</a>
+									<a href="#" class="btn btn-gplus"><i class="fa fa-google-plus"></i> Google</a>
+								</div>
+								<br />-->
+						<div class="form-group">
+							<button type="submit" onclick="checkRequirements()" class="btn btn-info btn-block">Create your account</button>
+						</div>
+						<p class="form-group">By creating an account, you agree to our <a href="#">Terms of Use</a> and our <a href="#">Privacy Policy</a>.</p>
+						
+						
+					</form>
+				</div>
+			</div>
+		
+		<div class="col-md-8">
+			<img src="img/register.jpg" class="img-responsive"></img>
+		</div>
+		</div>
+		
+    </div>
+</div>
+    
+<footer class="site-footer">
+		<div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; Hayrına Sınav Notları 2017</span>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline social-buttons">
+                        <li><a href="#"><i class="fa fa-twitter"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a>
+                        </li>
+                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <ul class="list-inline quicklinks">
+                        <li><a href="#">Privacy Policy</a>
+                        </li>
+                        <li><a href="#">Terms of Use</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+      </footer>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+	 <script src="js/bootstrap-datepicker.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+	
+	<script>
+	$('#date input').datepicker({
+	 format: "dd/mm/yyyy",
+	 forceParse:false
+	});
+	</script>
+	<script>
+	var password = document.getElementById("password")
+  , confirm_password = document.getElementById("confirm_password");
+
+	function validatePassword(){
+	  if(password.value != confirm_password.value) {
+		confirm_password.setCustomValidity("Passwords Don't Match");
+	  } else {
+		confirm_password.setCustomValidity('');
+	  }
+	}
+
+	password.onchange = validatePassword;
+	confirm_password.onkeyup = validatePassword;
+	</script>
+	<!--<script>
+	function checkRequirements(){
+		alert("You are already registered, please try to login.");
+	}
+	</script>-->
+
+  </body>
+</html>
